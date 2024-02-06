@@ -1,9 +1,18 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
+
 from datetime import time, datetime
 
 st.header("Streamlit 30 Days Challenge")
 
-st.write("Just Playing around for now...")
+st.header('Line chart')
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
 
 st.header('st.slider')
 
