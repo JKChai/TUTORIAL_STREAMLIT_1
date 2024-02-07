@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 
+## INTERACT WITH API ##
 st.title('🏀 Bored API app')
 
 st.sidebar.header('Input')
