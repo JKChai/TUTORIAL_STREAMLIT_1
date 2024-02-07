@@ -4,19 +4,28 @@ import pandas as pd
 import numpy as np
 
 from datetime import time, datetime
-from pandas_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+# from pandas_profiling import ProfileReport
+# from streamlit_pandas_profiling import st_profile_report
 
 ## COMMENTS/DOCSTRINGS IS 72 LINES ## COMMENTS/DOCSTRINGS IS 72 LINES ##
 st.header("Streamlit 30 Days Challenge")
 
 ###############################################################################
-st.header('`streamlit_pandas_profiling`')
+st.header('st.latex')
 
-df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+st.latex(r'''
+     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+     \sum_{k=0}^{n-1} ar^k =
+     a \left(\frac{1-r^{n}}{1-r}\right)
+     ''')
 
-pr = ProfileReport(df)
-st_profile_report(pr)
+###############################################################################
+# st.header('`streamlit_pandas_profiling`')
+
+# df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+
+# pr = ProfileReport(df)
+# st_profile_report(pr)
 
 ###############################################################################
 st.header('st.checkbox')
