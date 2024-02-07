@@ -1,4 +1,4 @@
-import ydata_profiling
+# import ydata_profiling
 import streamlit as st
 import pandas as pd
 import numpy as np
