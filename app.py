@@ -6,6 +6,14 @@ from datetime import time, datetime
 
 st.header("Streamlit 30 Days Challenge")
 
+st.header('st.selectbox')
+
+option = st.selectbox(
+     'What is your favorite color?',
+     ('Blue', 'Red', 'Green'))
+
+st.write('Your favorite color is ', option)
+
 st.header('Line chart')
 
 chart_data = pd.DataFrame(
