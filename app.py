@@ -13,8 +13,8 @@ st.header("Streamlit 30 Days Challenge")
 ###############################################################################
 st.title('st.secrets')
 
-st.write("Contents of the `.streamlit/secrets.toml` file of this app")
-st.write('Can be accessed via `st.secrets[\'message\']`')
+st.write('Contents of the `.streamlit/secrets.toml` file of this app')
+st.write('Can be accessed via `\'st.secrets[\'message\']\'`')
 
 ###############################################################################
 st.title('Customizing the theme of Streamlit apps')
